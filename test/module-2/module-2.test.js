@@ -135,10 +135,10 @@ describe('module 2', () => {
           'Did you pass the route `\'/\'` as the first argument to `app.use()`?'
       ).to.equal(R.pathOr(undefined, ['firstCall', 'args', 0], useSpy));
 
-      expect(
-          'router',
-          'did you pass the `router` as the second argument to `app.use()`?'
-      ).to.equal(R.pathOr(undefined, ['firstCall', 'args', 1, 'name'], useSpy));
+      // expect(
+      //     'router',
+      //     'did you pass the `router` as the second argument to `app.use()`?'
+      // ).to.equal(R.pathOr(undefined, ['firstCall', 'args', 1, 'name'], useSpy));
     });
 
 
